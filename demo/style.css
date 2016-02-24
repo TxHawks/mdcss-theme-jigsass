@@ -1,55 +1,53 @@
 /*---
-section: mdcss GitHub
+section: jigSass mdcss
 ---
-
-<img align="right" width="96" height="96" src="https://jonathantneal.github.io/mdcss-theme-github/demo/mdcss-logo.png" title="mdcss logo">
 
 [![NPM Version][npm-img]][npm] [![Build Status][ci-img]][ci]
 
-[mdcss GitHub] is a theme for [mdcss] based on the documentation styles seen
-across GitHub.
+[jigSass mdcss] is a theme for [mdcss] based on Jonathan Neal's own
+[mdcss GitHub](https://github.com/jonathantneal/mdcss-theme-github) theme.
 
-[ci]:      https://travis-ci.org/jonathantneal/mdcss-theme-github
-[ci-img]:  https://img.shields.io/travis/jonathantneal/mdcss-theme-github.svg
+[ci]:      https://travis-ci.org/TxHawks/mdcss-theme-jigsass
+[ci-img]:  https://img.shields.io/travis/txhawks/mdcss-theme-jigsass.svg
+[npm]:     https://www.npmjs.com/package/mdcss-theme-jigsass
+[npm-img]: https://img.shields.io/npm/v/mdcss-theme-jigsass.svg
+
 [mdcss]:   https://github.com/jonathantneal/mdcss
-[npm]:     https://www.npmjs.com/package/mdcss-theme-github
-[npm-img]: https://img.shields.io/npm/v/mdcss-theme-github.svg
-
-[mdcss GitHub]: https://github.com/jonathantneal/mdcss-theme-github
+[jigSass mdcss]: https://github.com/TxHawks/mdcss-theme-jigsass
 
 */
 
 /*---
 title:   Usage
-section: mdcss GitHub
+section: jigSass mdcss
 ---
 
-Add [mdcss] and [mdcss GitHub] to your build tool:
+Add [mdcss] and [jigSass mdcss] to your build tool:
 
 ```bash
 npm install mdcss --save-dev
-npm install mdcss-theme-github --save-dev
+npm install mdcss-theme-jigsass --save-dev
 ```
 
 Whenever [mdcss] is used, reference this theme.
 
 ```js
 require('mdcss')({
-	theme: require('mdcss-theme-github')({ /​* options *​/ })
+	theme: require('mdcss-theme-jigsass')({ /​* options *​/ })
 })
 ```
 
 [mdcss]:   https://github.com/jonathantneal/mdcss
-[mdcss GitHub]: https://github.com/jonathantneal/mdcss-theme-github
+[jigSass mdcss]: https://github.com/TxHawks/mdcss-theme-jigsass
 
 */
 
 /*---
 title:  Options
-section: mdcss GitHub
+section: jigSass mdcss
 ---
 
-Options control the look and feel of the mdcss GitHub theme as well as any
+Options control the look and feel of the jigSass mdcss theme as well as any
 iframe examples that may be used.
 
 #### `title`
@@ -62,9 +60,9 @@ The page title to be used by the style guide.
 #### `logo`
 
 Type: `String`  
-Default: `'mdcss-logo.png'`
+Default: `'jigsass-logo.png'`
 
-<img src="https://jonathantneal.github.io/mdcss-theme-github/demo/mdcss-logo.png" width="96" height="96">
+<img src="https://TxHawks.github.io/mdcss-theme-jigsass/demo/jigsass-logo.png" width="96" height="96">
 
 The page logo to be used by the style guide.
 
@@ -86,7 +84,7 @@ The frame to open example hyperlinks from within an example.
 #### `examples.css`
 
 Type:    `Array`  
-Default: `['style.css']`
+Default: `['style.css', 'prism-xonokay.css']`
 
 A list of CSS files to be used by examples.
 
@@ -122,30 +120,39 @@ styles are used to create a seamless effect with the styleguide.
 
 */
 
-* {
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	padding: 20px;
+	border-left: 6px solid #09a5d9;
+	margin: 0 auto;
+	max-width: 1100px;
+	padding: 20px 40px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
 	body {
 		display: flex;
-		padding: 30px 30px 90px;
+		padding: 30px 0 90px;
 	}
 
 	header {
 		flex-basis: 250px;
+		padding-left: 10px;
+	}
+
+	main {
+		 padding-left: 60px;
 	}
 }
 
 nav > img {
-	height: 190px;
-	margin: 0 25px 20px;
-	width: 190px;
+	height: 90px;
+	margin: 0 15px 20px;
+	width: 90px;
 }
 
 /*---
@@ -221,17 +228,18 @@ is rendered as:
 ```
 */
 
+html,
 body {
-	background-color: #ffffff;
+	background-color: #f0f0f5;
 	color: #333333;
 }
 
 pre, code {
-	background-color: rgba(0,0,0,.04);
+	background-color: #fff;
 }
 
 pre code {
-	background-color: transparent;
+	background-color: #fff;
 }
 
 .token.punctuation {
@@ -263,36 +271,44 @@ pre code {
 }
 
 .colors {
+	background-color: #fff;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .color {
-	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	flex-basis: 100%;
+	margin: 0;
+	padding: 3px;
 	vertical-align: top;
-	width: 160px;
 }
 
-.color:not(:last-child) {
-	margin-right: 40px;
+@media (min-width: 460px) {
+	.color {
+		flex-basis: 33%;
+	}
+}
+
+@media (min-width: 800px) {
+	.color {
+		flex-basis: 25%;
+	}
 }
 
 .color-swatch {
-	border-radius: 50%;
-	box-shadow: inset 0 0 1px 0 currentColor;
 	font-weight: 700;
 	height: 160px;
 	line-height: 160px;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 	text-align: center;
-	width: 160px;
 }
 
 .color-property {
 	font-size: 80%;
 	font-weight: 700;
-	padding: 0 10px;
+	padding: 0 12px;
 }
 
 .color-property::before {
@@ -313,7 +329,7 @@ This theme uses a common Helvetica font stack with a relative line height of
 */
 
 body {
-	font-family: "Helvetica Neue", "Helvetica", "Segoe UI", "Arial", "freesans", sans-serif;
+	font-family:'Open Sans', sans-serif;
 	line-height: 1.6;
 }
 
@@ -334,47 +350,44 @@ Headings match GitHub documentation conventions.
 ```
 */
 
-h1 {
-	font-size: 2.25em;
-	line-height: 1.2;
-	border-bottom: 1px solid #eee;
-	margin-bottom: 16px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #09a5d9;
+	font-weight: 300;
 	margin-top: 1em;
 	padding-bottom: .3em;
 }
 
+h1 {
+	font-size: 3em;
+	line-height: 1.2;
+	border-bottom: 1px solid;
+}
+
 h2 {
-	font-size: 1.75em;
-	line-height: 1.225;
-	border-bottom: 1px solid #eee;
-	margin-bottom: 1rem;
-	margin-top: 1em;
-	padding-bottom: .3em;
+	font-size: 2.25em;
+	line-height: 1.2;
+	border-bottom: 1px solid;
 }
 
 h3 {
 	font-size: 1.5em;
 	line-height: 1.43;
-	margin-bottom: 1rem;
-	margin-top: 1em;
+	border-bottom: 1px solid;
 }
 
 h4 {
 	font-size: 1.25em;
 	line-height: 1.4;
-	margin-bottom: 1rem;
-	margin-top: 1em;
 }
 
 h5, h6 {
 	font-size: 1em;
 	line-height: 1.4;
-	margin-bottom: 1rem;
-	margin-top: 1em;
-}
-
-h6 {
-	color: #777777;
 }
 
 code {
@@ -390,15 +403,13 @@ code {
 }
 
 button {
-	background-color: #eeeeee;
-	background-image: linear-gradient(#fcfcfc, #eeeeee);
-	border: 1px solid #d5d5d5;
-	border-radius: 3px;
-	color: #333333;
+	background-color: #09a5d9;
+	border: 0;
+	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 81.25%;
-	font-weight: bold;
+	font-size: 1rem;
+	font-weight: 300;
 	line-height: 1.538462;
 	outline: 0;
 	padding: 6px 12px;
@@ -406,17 +417,13 @@ button {
 	white-space: nowrap;
 }
 
-button:focus, button:hover {
-	background-color: #dddddd;
-	background-image: linear-gradient(#eeeeee, #dddddd);
-	border-color: #cccccc;
-}
-
-button:active {
-	background-color: #dcdcdc;
-	background-image: none;
-	border-color: #b5b5b5;
-	box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+button:active.
+button:focus, 
+button:hover {
+	background-color: #067194;
+	box-shadow: inset 0 2px 5px rga(0,0,0,0.25);
+	color: #000;
+	transition: all 0.25s ease-out;
 }
 
 /*---
@@ -437,7 +444,7 @@ The navigation remains fixed while you scroll.
 
 */
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
 	main {
 		max-width: 50em;
 		width: calc(100% - 250px);
@@ -494,21 +501,25 @@ hr {
 }
 
 a {
-	color: #4078c0;
+	color: #067194;
 	cursor: pointer;
 	text-decoration: none;
 }
 
 footer {
-	color: #767676;
+	background-color: #353535;
+	color: #ccc;
 	font-size: .75rem;
+	padding: 6px;
 }
 
-a:hover, a:active {
+a:active,
+a:focus,
+a:hover {
 	text-decoration: underline;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
 	nav {
 		position: fixed;
 		width: calc(250px - 30px);
@@ -529,16 +540,16 @@ nav > ul {
 }
 
 nav a {
-	color: #565454;
+	color: #09a5d9;
 	display: block;
 	font-size: .875rem;
 	line-height: 1.2;
 	padding: 5px 25px;
+	transition: all .25s ease-out;
 }
 
 nav a:hover,
 nav a:focus {
-	background-color: #f8f8f8;
 	text-decoration: none;
 }
 
@@ -547,10 +558,11 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-	color: #767676;
-	font-size: .75rem;
+	color: #09a5d9;
+	font-size: 1.3rem;
 	font-weight: 300;
 	letter-spacing: .025em;
+	line-height: 1.5;
 	overflow: hidden;
 	text-transform: uppercase;
 	padding: 5px 25px;
@@ -559,11 +571,15 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-	color: #5f5f5f;
+	color: #09a5d9;
 }
 
 nav > ul > li > a > span {
 	box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+}
+
+nav  ul  li  a:hover span {
+	box-shadow: 0 3px 0 0 rgba(9, 165, 217, .4);
 }
 
 /*---
@@ -647,5 +663,5 @@ perferendis quam! Ullam, debitis ab maiores.
 */
 
 :root {
-	background-color: #ffffff;
+	background-color: #f0f0f5;
 }

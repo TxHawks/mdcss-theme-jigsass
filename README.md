@@ -1,25 +1,24 @@
-# mdcss GitHub
+# jigSass mdcss
 
-<img align="right" width="96" height="96" src="https://jonathantneal.github.io/mdcss-theme-github/demo/mdcss-logo.png" title="mdcss logo">
+<img align="right" width="96" height="96" src="https://txhawks.github.io/mdcss-theme-github/demo/jigsass-logo.png" alt="jigSass logo" title="jigSass logo">
 
 [![NPM Version][npm-img]][npm] [![Build Status][ci-img]][ci]
-
-[mdcss GitHub] is a theme for [mdcss] based on the documentation styles seen across GitHub.
-
+[jigSass mdcss] is a theme for [mdcss] based on Jonathan Neal's own
+[mdcss GitHub](https://github.com/jonathantneal/mdcss-theme-github) theme. 
 ## Usage
 
-Add [mdcss] and [mdcss GitHub] to your build tool:
+Add [mdcss] and [jigSass mdcss] to your build tool:  
 
 ```bash
 npm install mdcss --save-dev
-npm install mdcss-theme-github --save-dev
+npm install mdcss-theme-jigsass --save-dev
 ```
 
 Whenever [mdcss] is used, reference this theme.
 
 ```js
 require('mdcss')({
-	theme: require('mdcss-theme-github')({ /* options */ })
+	theme: require('mdcss-theme-jigsass')({ /* options */ })
 })
 ```
 
@@ -82,9 +81,9 @@ The page title to be used by the style guide.
 #### `logo`
 
 Type: `String`  
-Default: `'mdcss-logo.png'`
+Default: `'jigsass-logo.png'`
 
-<img src="https://jonathantneal.github.io/mdcss-theme-github/demo/mdcss-logo.png" width="96" height="96">
+<img src="https://txhawks.github.io/mdcss-theme-jigsass/demo/jigsass-logo.png" width="96" height="96">
 
 The page logo to be used by the style guide.
 
@@ -158,4 +157,5 @@ A string of styles applied to the `<body>` wrapping the example. These default s
 [npm-img]: https://img.shields.io/npm/v/mdcss-theme-github.svg
 [mdcss]:   https://github.com/jonathantneal/mdcss
 
+[jigSass mdcss]: https://github.com/TxHawks/mdcss-theme-jigsass 
 [mdcss GitHub]: https://github.com/jonathantneal/mdcss-theme-github

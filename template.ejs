@@ -2,8 +2,9 @@
 <title><%- opts.title %></title>
 <meta charset="utf-8">
 <% opts.css.forEach(function (href) {
-	%><link href="<%= href %>" rel="stylesheet"><%
+	%><link href="<%= href %>?05" rel="stylesheet"><%
 }); %>
+<script type="text/javascript">WebFontConfig={google:{families:["Open+Sans:400,300:latin"]}},function(){var e=document.createElement("script");e.src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",e.type="text/javascript",e.async="true";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();</script>
 <script>examples=<%- JSON.stringify(opts.examples) %>;</script>
 <% opts.js.forEach(function (src) {
 	%><script src="<%= src %>"></script><%

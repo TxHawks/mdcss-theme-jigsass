@@ -1,18 +1,24 @@
 {
-  "name": "mdcss-theme-github",
-  "version": "2.2.0",
-  "description": "GitHub flavored theme for mdcss",
+  "name": "mdcss-theme-jigsass",
+  "version": "0.1.0",
+  "description": "An mdcss theme for jigSass. Based on Jonathan Neal's `mdcss-theme-github`",
   "keywords": [
     "mdcss",
     "mdcss-theme",
-    "github",
+    "jigsass",
     "theme"
   ],
-  "author": "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com)",
+  "author": {
+    "name": "TxHawks",
+    "email": "tofu.hawks@gmail.com"
+  },
   "license": "CC0-1.0",
-  "repository": "jonathantneal/mdcss-github-theme",
-  "bugs": "https://github.com/jonathantneal/mdcss-github-theme/issues",
-  "homepage": "https://github.com/jonathantneal/mdcss-github-theme#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txhawks/mdcss-theme-jigsass.git"
+  },
+  "hompage": "https://github.com/txhawks/mdcss-theme-jigsass#readme",
+  "bugs": "https://github.com/txhawks/mdcss-theme-jigsass/issues",
   "dependencies": {
     "ejs": "^2.4.1",
     "object-assign": "^4.0.1"
@@ -21,6 +27,7 @@
     "chokidar": "^1.4.2",
     "eslint": "^1.10.3",
     "mdcss": "^1.5.0",
+    "postcss": "^5.0.16",
     "tap-spec": "^4.1.1",
     "tape": "^4.4.0",
     "watch": "^0.17.1"

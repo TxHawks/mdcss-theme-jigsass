@@ -4,11 +4,11 @@ var path    = require('path');
 var plugin  = require('./');
 var test    = require('tape');
 
-test('mdcss-theme-github', function (t) {
+test('mdcss-theme-jigsass', function (t) {
 	t.plan(1);
 
-	var message = 'Test mdcss GitHub';
-	var options = { theme: plugin({ title: 'mdcss GitHub' }), destination: 'demo' };
+	var message = 'Test mdcss jigSass';
+	var options = { theme: plugin({ title: 'jigSass mdcss them' }), destination: 'demo' };
 	var warning = 0;
 	var warningMsg = message + ' (# of warnings)';
 
