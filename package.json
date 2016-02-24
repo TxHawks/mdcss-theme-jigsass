@@ -1,6 +1,6 @@
 {
   "name": "mdcss-theme-jigsass",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "An mdcss theme for jigSass. Based on Jonathan Neal's `mdcss-theme-github`",
   "keywords": [
     "mdcss",
@@ -43,9 +43,5 @@
       "assets",
       "template.ejs"
     ]
-  },
-  "engines": {
-    "iojs": ">=2.0.0",
-    "node": ">=0.12.0"
   }
 }
