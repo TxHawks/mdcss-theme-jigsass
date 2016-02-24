@@ -150,8 +150,8 @@ Default: `'background:none;border:0;clip:auto;display:block;height:auto;margin:0
 
 A string of styles applied to the `<body>` wrapping the example. These default styles are used to create a seamless effect with the styleguide.
 
-[ci]:      https://travis-ci.org/txhawks/mdcss-theme-jigsass
-[ci-img]:  https://img.shields.io/travis/txhawks/mdcss-theme-jigsass.svg
+[ci]:      https://travis-ci.org/TxhAwks/mdcss-theme-jigsass
+[ci-img]:  https://img.shields.io/travis/TxHawks/mdcss-theme-jigsass.svg
 [npm]:     https://www.npmjs.com/package/mdcss-theme-jigsass
 [npm-img]: https://img.shields.io/npm/v/mdcss-theme-jigsass.svg
 [mdcss]:   https://github.com/jonathantneal/mdcss
