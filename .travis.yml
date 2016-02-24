@@ -1,8 +1,4 @@
-sudo: false
 language: node_js
 node_js:
-  - "0.4"
-  - "0.5"
-branches:
-  only:
-    - gh-pages
+  - v5
+  - v4
