@@ -1,7 +1,5 @@
 # jigSass mdcss
 
-<img align="right" width="96" height="96" src="https://txhawks.github.io/mdcss-theme-github/demo/jigsass-logo.png" alt="jigSass logo" title="jigSass logo">
-
 [![NPM Version][npm-img]][npm] [![Build Status][ci-img]][ci]
 [jigSass mdcss] is a theme for [mdcss] based on Jonathan Neal's own
 [mdcss GitHub](https://github.com/jonathantneal/mdcss-theme-github) theme. 
@@ -151,10 +149,10 @@ Default: `'background:none;border:0;clip:auto;display:block;height:auto;margin:0
 
 A string of styles applied to the `<body>` wrapping the example. These default styles are used to create a seamless effect with the styleguide.
 
-[ci]:      https://travis-ci.org/jonathantneal/mdcss-theme-github
-[ci-img]:  https://img.shields.io/travis/jonathantneal/mdcss-theme-github.svg
-[npm]:     https://www.npmjs.com/package/mdcss-theme-github
-[npm-img]: https://img.shields.io/npm/v/mdcss-theme-github.svg
+[ci]:      https://travis-ci.org/txhawks/mdcss-theme-jigsass
+[ci-img]:  https://img.shields.io/travis/txhawks/mdcss-theme-jigsass.svg
+[npm]:     https://www.npmjs.com/package/mdcss-theme-jigsass
+[npm-img]: https://img.shields.io/npm/v/mdcss-theme-jigsass.svg
 [mdcss]:   https://github.com/jonathantneal/mdcss
 
 [jigSass mdcss]: https://github.com/TxHawks/mdcss-theme-jigsass 
