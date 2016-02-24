@@ -1,6 +1,7 @@
 # jigSass mdcss
 
-[![NPM Version][npm-img]][npm] [![Build Status][ci-img]][ci]
+[![NPM Version][npm-img]][npm] [![Build Status][ci-img]][ci]  
+
 [jigSass mdcss] is a theme for [mdcss] based on Jonathan Neal's own
 [mdcss GitHub](https://github.com/jonathantneal/mdcss-theme-github) theme. 
 ## Usage
