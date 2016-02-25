@@ -329,7 +329,7 @@ This theme uses a common Helvetica font stack with a relative line height of
 */
 
 body {
-	font-family:'Open Sans', sans-serif;
+	font-family: roboto, sans-serif;
 	line-height: 1.6;
 }
 
