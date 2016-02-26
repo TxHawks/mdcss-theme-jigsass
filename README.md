@@ -68,7 +68,7 @@ The `color` keyword is used to generate a visual palette of colors. Arguments th
 
 ## Options
 
-Options control the look and feel of the [mdcss GitHub] theme as well as any iframe examples that may be used.
+Options control the look and feel of the JigSass mdcss theme, as well as any iframe examples that may be used.
 
 #### `title`
 
