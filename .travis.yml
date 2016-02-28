@@ -10,4 +10,4 @@ branches:
     - gh-pages
 
 notifications:
-	email: false
+  email: false
