@@ -129,7 +129,7 @@ styles are used to create a seamless effect with the styleguide.
 body {
 	border-left: 6px solid #09a5d9;
 	margin: 0 auto;
-	max-width: 1100px;
+	max-width: 1600px;
 	padding: 20px 40px;
 }
 
@@ -470,7 +470,6 @@ The navigation remains fixed while you scroll.
 
 @media screen and (min-width: 800px) {
 	main {
-		max-width: 50em;
 		width: calc(100% - 250px);
 	}
 }
@@ -482,6 +481,10 @@ main > section {
 figure,
 p {
 	margin: 0 0 1rem;
+}
+
+p, ul {
+	max-width: 45em;
 }
 
 figure {
@@ -543,10 +546,15 @@ a:hover {
 	text-decoration: underline;
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 50em) {
 	nav {
 		position: fixed;
 		width: calc(250px - 30px);
+	}
+
+	nav > ul {
+		max-height: calc(100vh - 190px - 20px - 30px);
+		overflow-y: scroll;
 	}
 }
 
@@ -557,8 +565,6 @@ nav ul {
 }
 
 nav > ul {
-	max-height: calc(100vh - 190px - 20px - 30px);
-	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	padding-bottom: 20px;
 }
