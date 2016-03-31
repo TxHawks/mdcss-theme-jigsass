@@ -553,7 +553,7 @@ a:hover {
 	}
 
 	nav > ul {
-		max-height: calc(100vh - 190px - 20px - 30px);
+		max-height: calc(100vh - 150px);
 		overflow-y: scroll;
 	}
 }
