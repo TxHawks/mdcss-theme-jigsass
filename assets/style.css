@@ -386,6 +386,12 @@ h6 {
 	padding-bottom: .3em;
 }
 
+h4,
+h5,
+h6 {
+	margin-bottom: 0;
+}
+
 h1 {
 	font-size: 3em;
 	line-height: 1.2;
@@ -485,6 +491,10 @@ p {
 
 p, ul {
 	max-width: 45em;
+}
+
+ul {
+	margin-top: 0;
 }
 
 figure {
