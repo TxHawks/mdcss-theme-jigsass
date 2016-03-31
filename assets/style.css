@@ -263,8 +263,8 @@ pre, code {
 	background-color: #fff;
 }
 
-pre code {
-	background-color: #fff;
+:not(pre)>code {
+	color: #09a5d9;
 }
 
 .token.punctuation {
