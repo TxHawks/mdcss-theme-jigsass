@@ -140,12 +140,12 @@ body {
 	}
 
 	header {
-		flex-basis: 250px;
+		flex-basis: 300px;
 		padding-left: 10px;
 	}
 
 	main {
-		 padding-left: 60px;
+		 padding-left: 30px;
 		 padding-right: 24px;
 	}
 }
@@ -506,7 +506,7 @@ The navigation remains fixed while you scroll.
 
 @media screen and (min-width: 800px) {
 	main {
-		width: calc(100% - 250px);
+		width: calc(100% - 300px);
 	}
 }
 
@@ -603,7 +603,7 @@ a:hover {
 @media (min-width: 50em) {
 	nav {
 		position: fixed;
-		width: calc(250px - 30px);
+		width: calc(300px - 30px);
 	}
 
 	nav > ul {
