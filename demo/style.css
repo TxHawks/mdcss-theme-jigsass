@@ -273,13 +273,13 @@ table {
 }
 
 th, td {
-	padding: .5em .5em .5em 0;
+	padding: .5em 2em .5em 0;
 	vertical-align: top;
 	text-align: left;
 }
 
 th {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 2px solid #ddd;
 	color: #09a5d9;
 }
 
