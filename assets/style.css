@@ -567,10 +567,24 @@ hr {
 	padding: 0;
 }
 
-a {
+a,
+a:visited {
 	color: #067194;
 	cursor: pointer;
 	text-decoration: none;
+}
+
+main a {
+	background-color: #d6ebf2;
+	color: #067194;
+	padding-left: 3px;
+	padding-right: 3px;
+	transition: all 0.5s;
+}
+
+main a:hover {
+	background-color: #09a5d9;
+	color: #fff;
 }
 
 footer {
